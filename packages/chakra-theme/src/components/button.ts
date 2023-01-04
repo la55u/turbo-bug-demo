@@ -1,5 +1,3 @@
-import { inputTheme } from "./input";
-
 export default {
   baseStyle: {
     fontWeight: "semibold",
@@ -12,18 +10,15 @@ export default {
 
   sizes: {
     sm: {
-      height: inputTheme.sizes?.sm.field.height,
-      fontSize: inputTheme.sizes?.sm.field.fontSize,
+      height: "20px",
       px: 2,
     },
     md: {
-      height: inputTheme.sizes?.md.field.height,
-      fontSize: inputTheme.sizes?.md.field.fontSize,
+      height: "32px",
       px: 4,
     },
     lg: {
-      height: inputTheme.sizes?.lg.field.height,
-      fontSize: inputTheme.sizes?.lg.field.fontSize,
+      height: "48px",
       px: 6,
     },
   },
