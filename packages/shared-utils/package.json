@@ -1,0 +1,32 @@
+{
+  "name": "shared-utils",
+  "version": "0.0.0",
+  "description": "Common utility functions",
+  "sideEffects": false,
+  "private": true,
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "prebuild": "pnpm clean",
+    "build": "tsup index.ts --format esm,cjs --dts --external react",
+    "dev": "pnpm build --watch",
+    "clean": "rimraf dist .turbo",
+    "lint": "eslint src/**/*.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tsconfig": "workspace:*",
+    "eslint-config-custom": "workspace:*"
+  }
+}

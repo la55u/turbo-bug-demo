@@ -1,0 +1,45 @@
+{
+  "name": "test-monorepo",
+  "version": "1.0.0",
+  "description": "Test Monorepo",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "pnpm -r --parallel exec rimraf dist .next .turbo *.log *lock.yaml",
+    "lint": "turbo run lint"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@tanstack/react-query": "^4.20.4",
+    "@tanstack/react-query-devtools": "^4.20.4",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "eslint": "^8.30.0",
+    "framer-motion": "^8.0.2",
+    "next": "13.1.1",
+    "prettier": "^2.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.5.0",
+    "turbo": "^1.6.3",
+    "typescript": "4.9.4"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "18.x",
+    "pnpm": ">=7.9.5"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "^18.2.0",
+      "react-dom": "^18.2.0"
+    }
+  },
+  "packageManager": "pnpm@7.11.0"
+}

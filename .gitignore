@@ -1,0 +1,82 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+dist
+**/node_modules
+npm-debug.log
+
+storybook-static/
+
+apps/**/.next/
+apps/**/out/
+
+packages/**/lib
+packages/**/dist
+packages/**/coverage
+packages/**/.env
+packages/**/.rpt2_cache
+packages/**/.rts2_cache*
+packages/**/tsconfig.tsbuildinfo
+
+*.log
+*.cache
+yarn-error.log
+
+tsconfig.tsbuildinfo
+.next
+.idea
+
+# dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+a11y-report.json
+
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+package-lock.json
+yarn.lock
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# local env files
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+**.tsbuildinfo
+
+# Turborepo
+.turbo
+
+# Output of 'npm pack'
+*.tgz
+
+# Optional REPL history
+.node_repl_history
+
+
+# Optional eslint cache
+.eslintcache
+
+# Optional npm cache directory
+.npm
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
